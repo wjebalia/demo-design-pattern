@@ -6,14 +6,14 @@ import org.slf4j.LoggerFactory;
 
 public class AnimalFactory {
 
-    private static final Logger Logger = LoggerFactory.getLogger(AnimalFactory.class);
+    private static final Logger logger = LoggerFactory.getLogger(AnimalFactory.class);
 
     public AnimalFactory() {
-        Logger.info(" This is the AnimalFactory");
+        logger.info(" This is the AnimalFactory");
     }
 
     public Animal create(AnimalType type) {
-        Logger.info("Create a new {}", type.name());
+        logger.info("Create a new {}", type);
         if (AnimalType.CAT.equals(type)) {
             return new Cat();
         }
