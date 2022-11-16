@@ -1,8 +1,10 @@
 package com.demo.series.design.patterns.demoseries.adapter;
 
 
-class AndroidToAppleChargerAdapterTest {
+import org.junit.jupiter.api.Test;
 
+class AndroidToAppleChargerAdapterTest {
+    @Test
     private void test(){
         ApplePhone applePhone = new ApplePhone();
         AndroidCharger androidCharger = new AndroidCharger();
